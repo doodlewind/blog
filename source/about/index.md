@@ -5,7 +5,7 @@ title: 关于
 
 `ewind.hasAttr()`
 
-* Doodle Jump 爱好者 - doodlewind 昵称出处
+* 前 Doodle Jump 爱好者 - doodlewind 昵称出处
 * 不熟练白魔法师
 * COC 匹配狂魔
 * Photoshop 摄影师
@@ -21,10 +21,11 @@ title: 关于
 ## Projects
 
 ### Tools
+* [FlyLog](https://github.com/doodlewind/flylog) -  前端远程调试工具
+* [imdoc](https://github.com/doodlewind/imdoc) - Markdown 文档生成器
 * [legs](https://github.com/doodlewind/legs) -  Gulp 前端自动化工作流
 * [easyLoop](https://github.com/doodlewind/easyLoop) - jQuery 轮播插件
 * [easyScale](https://github.com/doodlewind/easyScale) - jQuery 响应式布局插件
-* [imdoc](https://github.com/doodlewind/imdoc) - Markdown 文档生成器
 
 ### Sites
 * [ustc.life](http://ustc.life) - 科大学生导航主页
