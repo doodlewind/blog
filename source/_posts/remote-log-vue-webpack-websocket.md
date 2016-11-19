@@ -12,7 +12,7 @@ toc: true
 title: 基于 Vue / Webpack / WebSocket 的前端远程调试工具
 ---
 
-[FlyLog](https://github.com/doodlewind/flylog) 这一工具可对 iOS / Android / 302 Page 等难以调试的页面进行实时远程调试，并提供了 AOP 风格的调试 API。下面分享一下它的实现。
+[FlyLog](https://github.com/doodlewind/flylog) 这一工具可对传统调试工具难以调试的页面进行实时远程调试。在手机打开引入 FlyLog 的页面后，PC 端后台会实时推送该页面的日志信息，支持多设备并发访问，且提供了 AOP 风格的调试 API。下面分享一下它的实现。
 
 <!--more-->
 
@@ -46,7 +46,7 @@ FlyLog 由三个独立的 JS 模块组成。
 模块之间的联系十分简洁：待调试页面引入位于服务端的 `flyEcho.js` 后，`console.log` 等方法的信息会被截获并 POST （待调试页面的日志信息不走 WebSocket）到服务端，服务端广播相应消息到所有 Admin 客户端，从而实现远程调试。
 
 ## Hook 模块 - flyEcho
-[flyEcho](https://github.com/doodlewind/flylog/blob/master/flyEcho.js) 通过 AOP 面向切面编程的方式，实现了将上报代码注入到 `console.log` 和 `window.onload` 执行的前后执行，且提供了用于调试的 API 以便实现定制。
+[flyEcho](https://github.com/doodlewind/flylog/blob/master/flyEcho.js) 通过 AOP 面向切面编程的方式，实现了将上报代码切入到 `console.log` 和 `window.onload` 调用的前后执行，且提供了用于调试的 API 以便实现定制。
 
 ### AOP 的实现
 AOP 的实现，实际上就是在函数执行前或执行后，切入一段自有的代码，且不修改原函数代码。在 JS 中可以用下面这段经典的代码片段来实现：
@@ -161,7 +161,7 @@ io.emit('name', data);
 即可向所有连接的 WebSocket 客户端广播名为 `name` 的 data 数据，数据可以是 JSON 或 string 等格式。
 
 ### 跨域
-不通过 JSONP 的方式，直接在响应中使用 `Access-Control` 全家桶首部即可响应跨域请求。简要流程是：在发送 `appliacation/json` 一类的 XHR 请求前，浏览器会首先发送一个 Preflight OPTION 请求，检查响应首部是否声明支持跨域。若支持则发送原请求。
+不通过 JSONP 的方式，直接在响应中使用 `Access-Control` 全家桶首部即可响应跨域请求。简要流程是：在发送 `appliacation/json` 一类的 XHR 请求前，浏览器会首先发送一个 Preflight OPTION 请求，检查响应首部是否声明支持跨域，若支持则发送原请求。
 
 ``` js
 // 传入 http 模块的 handler 函数
@@ -229,7 +229,7 @@ module.exports = {
 ```
 
 ### 数据传递
-Vue 2.0 中废弃了 `$dispatch` 和 `$bradcast` 方法，而简单的数据单向传递（从 WebSocket 服务端推送至客户端）不需要引入 Vuex 这类较重的解决方案，直接在 `window.bus` 全局变量上设置事件的触发器和监听器即可：
+Vue 2.0 中废弃了 `$dispatch` 和 `$broadcast` 方法，而简单的数据单向传递（从 WebSocket 服务端推送至客户端）不需要引入 Vuex 这类较重的解决方案，直接在 `window.bus` 全局变量上设置事件的触发器和监听器即可：
 
 ``` js
   // App.vue
