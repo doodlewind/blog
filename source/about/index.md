@@ -1,24 +1,29 @@
-date: 2016-09-24
+date: 2017-05-23
 
 title: 关于
 ---
 
-`ewind.hasAttr()`
+`Object.keys(ewind)`
 
 * 前 Doodle Jump 爱好者 - doodlewind 昵称出处
+* 前 COC 匹配狂魔
 * 不熟练白魔法师
-* COC 匹配狂魔
-* Photoshop 摄影师
+* GUNPLA 爱好者
 
 
 ## Skills
 * 精通: <del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
-* 熟练: JS / CSS
-* 熟悉: Python / PHP / Linux / Git
-* 了解: Java / C
+* 熟练: FED
+* 熟悉: CS 基础
+* 了解: Web Tech Stack
 
 
-## Projects
+## Side Projects
+
+### Libraries
+* [Sinomap](http://sinomap.ewind.us) - 超轻 canvas 地图库
+* [vue-springbud](https://github.com/doodlewind/vue-springbud) - 100 行内的 Vue 生产环境模板
+* [vue-cmap](https://github.com/doodlewind/vue-cmap) - Vue 中国地图 Leaflet 组件
 
 ### Tools
 * [FlyLog](https://github.com/doodlewind/flylog) -  前端远程调试工具
@@ -37,13 +42,16 @@ title: 关于
 * [APPSeed](/h5/appseed/) - 科大 APPSeed 社团主页
 
 ### Demos
+* [merry8](https://github.com/doodlewind/merry8) - Chip8 汇编解释器，支持运行 PONG 游戏
+* [ove-lang](http://ewind.us/h5/ove-lang/demo/) - 搞一个大新闻的 lisp 方言
 * [Typesetting](http://t.cn/RcQaMh4) - 数学公式排版语言编译器，基于 LALR 语法分析
 * [Gomoku Sifu](/h5/gomoku) - 简单五子棋 AI，基于 alpha / beta 剪枝
 * [MD Table Converter](/h5/md-table) - Markdown 表格美化 / 生成器，基于 LL 语法分析
 
 
 ## Career
-* 2016/07 - Now: 科大讯飞 - 前端开发
+* 2017/05 - Now: 美团点评 - 前端开发
+* 2016/07 - 2017/05: 科大讯飞 - 前端开发
 * 2015/07 - 2015/08: 上海腾讯 - 实习
 
 
