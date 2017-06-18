@@ -4,6 +4,7 @@ tags:
 
 - Visualization
 - JS
+- Vue
 
 date: 2016-11-30
 

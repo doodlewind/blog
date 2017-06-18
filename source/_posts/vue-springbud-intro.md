@@ -4,6 +4,7 @@ tags:
 
 - Web
 - JS
+- Vue
 
 date: 2016-10-11
 
