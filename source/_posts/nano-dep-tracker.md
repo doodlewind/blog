@@ -2,7 +2,8 @@ categories: Note
 
 tags:
 
-- Algorithms
+- JS
+- Pattern
 - Vue
 
 date: 2017-08-03

@@ -3,6 +3,7 @@ categories: Note
 tags:
 
 - JS
+- Pattern
 
 date: 2017-07-14
 
