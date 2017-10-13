@@ -1,4 +1,4 @@
-date: 2017-05-23
+date: 2017-10-13
 
 title: 关于
 ---
@@ -6,21 +6,23 @@ title: 关于
 `Object.keys(ewind)`
 
 * 前 Doodle Jump 爱好者 - doodlewind 昵称出处
-* 前 COC 匹配狂魔
+* 前 COC 泰坦玩家
+* 前宾得用户
 * 不熟练白魔法师
-* GUNPLA 爱好者
+* PSP / NDS / GUNPLA 入门爱好者
+* 排版格式强迫症
 
 
 ## Skills
-* 精通: <del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
-* 熟练: FED
-* 熟悉: CS 基础
-* 了解: Web Tech Stack
+* **精通：**<del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
+* **熟练：**FED
+* **熟悉：**CS 基础
+* **了解：**Web Tech Stack
 
 
 ## Side Projects
 
-### Libraries
+### Libs
 * [Sinomap](http://sinomap.ewind.us) - 超轻 canvas 地图库
 * [vue-springbud](https://github.com/doodlewind/vue-springbud) - 100 行内的 Vue 生产环境模板
 * [vue-cmap](https://github.com/doodlewind/vue-cmap) - Vue 中国地图 Leaflet 组件
@@ -50,15 +52,15 @@ title: 关于
 
 
 ## Career
-* 2017/05 - Now: 美团点评 - 前端开发
-* 2016/07 - 2017/05: 科大讯飞 - 前端开发
-* 2015/07 - 2015/08: 上海腾讯 - 实习
+* `2017/05 - Now` 美团点评 - 前端开发
+* `2016/07 - 2017/05` 科大讯飞 - 前端开发
+* `2015/07 - 2015/08` 上海腾讯 - 实习
 
 
 ## Education
-* 2013 - 2016: 中国科学技术大学 - 信息安全
-* 2012 - 2013: 中国科学技术大学 - 物理学院
-* 2009 - 2012: 福建省漳州一中
+* `2013 - 2016` 中国科学技术大学 - 信息安全
+* `2012 - 2013` 中国科学技术大学 - 物理学院
+* `2009 - 2012` 福建省漳州一中
 
 
 ## Contact
