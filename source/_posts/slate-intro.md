@@ -13,7 +13,7 @@ toc: true
 title: Slate.js - 革命性的富文本编辑框架
 ---
 
-相信很多同学即便没有接触过富文本编辑领域，也一定听说过【富文本编辑是天坑，千万不要碰】的说法——是的，富文本编辑是天坑，除非你选择了 [Slate](docs.slatejs.org)。下面会介绍富文本编辑的复杂度所在，以及 Slate 的解决方式。
+相信很多同学即便没有接触过富文本编辑领域，也一定听说过【富文本编辑是天坑，千万不要碰】的说法——是的，富文本编辑是天坑，但 [Slate](docs.slatejs.org) 能很好地帮助你。下面会介绍富文本编辑的复杂度所在，以及 Slate 的解决方式。
 
 <!--more-->
 
@@ -95,7 +95,7 @@ Vue 和 Angular 这样的框架，在易用性上是有口皆碑的。那么，�
 ## 介绍 Slate
 Slate 并非一个编辑器应用，而是一套在 React 和 Immutable 的坚实基础上，用于操作富文本数据的强大框架。**基于 Slate 实现一个富文本编辑器，只相当于使用 React（视图层）+ Immutable（数据层）开发一个普通 Web 应用。**下图中展示了一个基于 Slate 实现的编辑器架构，数据的流动非常简单易懂：
 
-![editor-arch](http://7u2gqx.com1.z0.glb.clouddn.com/citadel-editor.jpg)
+![editor-arch](https://user-gold-cdn.xitu.io/2017/10/18/b6c4add0305288d10ad3f8c80d034fbc)
 
 图中，左侧视图层的 Toolbar 工具栏和 Editor 内的各种 Node 都是纯粹的 React 组件，右侧的模型层则大量应用了 Slate 所提供的支持。下面，我们简单介绍一下这个架构中的几个关键角色。
 
@@ -119,7 +119,7 @@ Slate 并非一个编辑器应用，而是一套在 React 和 Immutable 的坚�
 
 不过，Draft.js 和 Slate 都实现了对 React 的支持。虽然 Slate 定制节点的 API 更方便一些，但这也不是决定性的优势。那么 Slate 的特殊之处又哪呢？
 
-### Slate，迄今最优秀的 Controller
+### Slate，迄今最灵活的 Controller
 从前面的介绍中，我们看到相当多创新之处都是来自 Draft.js 的。那么，Slate 又有什么独特之处呢？
 
 Draft.js 有 Immutable 作为 Model，有 React 作为 View，但在使用它实现编辑器的过程中，你可能会感觉这比起一般的应用开发来，负担还是有些沉重，或者说少了一点什么东西。嗯，这个东西也许就是你熟悉的 Controller。
@@ -148,12 +148,9 @@ state.change().insertText().deleteBlock()
 ## 总结
 在富文本编辑领域，Slate 是一个后起之秀。不过在推出迄今的短短一年内，它的社区贡献者数量已经和 Draft.js 甚至 Vue 接近，达到了百人级别。并且，它的 Issue 和 PR 处理比 Draft.js 更加及时，作者对新想法也更加开放，迭代更加活跃。
 
-Slate 的许多核心特性是从其他优秀编辑器项目中借鉴的，如其 Immutable 数据层与框架理念来自 Draft.js、Schema 与 Change 概念来自 ProseMirror 等。虽然它的许多闪光点单独看来并非独树一帜，但在宏观层面上做到了博采众长（听起来和 Vue 有些接近？）。目前它还处于快速的迭代中，对有兴趣参与的同学，成为贡献者的机会很多哦 😀
-
-One more thing，本文作者所在的美团点评厦门前端团队完成了对 Slate.js 中文文档的翻译，现已作为官方的中文版本提供。我们也向 Slate 贡献了多个 bugfix 与优化的 PR。我们的团队正在聚焦为 PC 端提供创新的工作体验，非常欢迎感兴趣同学的加入 😉
+Slate 的许多核心特性是从其他优秀编辑器项目中借鉴的，如其 Immutable 数据层与框架理念来自 Draft.js、Schema 与 Change 概念来自 ProseMirror 等。虽然它的许多闪光点单独看来并非独树一帜，但在宏观层面上做到了博采众长（听起来和 Vue 有些接近？）。目前它还处于快速的迭代中，对有兴趣参与的同学，成为贡献者的机会很多哦。
 
 ## Resources
 - [Slate 官网](http://slatejs.org/)
 - [Slate Github](https://github.com/ianstormtaylor/slate)
 - [Slate 中文文档](https://doodlewind.github.io/slate-doc-cn/)
-- [本文作者 Github](http://github.com/doodlewind)
