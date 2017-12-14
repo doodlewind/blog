@@ -167,3 +167,23 @@ React 代表的就是另一种类型的技术创新了。它的确打破了很�
 所以我们该有怎么样的态度来面对技术演化的黑天鹅性质呢？玉伯 dalao 的签名非常有借鉴意义：『因上努力，果上随缘』。达到开发明星项目水平的同学有很多，但革命性的项目有太多不确定性，我们能做的也就是踏实地去学习和进步，然后耐心地等待吧。换句话说，这就是所谓的『且行好事，莫问前程』了。当然了，请不要把这个态度和胶水程序员们心安理得地编写增查改删的业务逻辑混为一谈哦 🙂
 
 鉴于作者对前端的了解有限，因此本文只涉及了几个前端领域中老生常谈的例子而已。如果大家有勘误或更好的想法，欢迎在 [Github](https://github.com/doodlewind/blog-src) 或评论中提出，谢谢。
+
+
+## References
+
+* [How JavaScript Was Created](http://speakingjs.com/es5/ch04.html)
+* [The A-Z of Programming Languages: JavaScript](https://www.computerworld.com.au/article/255293/a-z_programming_languages_javascript/)
+* [A Brief History of JavaScript](https://brendaneich.com/2010/07/a-brief-history-of-javascript/)
+* [The History of undefined and null](http://speakingjs.com/es5/ch08.html#_the_history_of_undefined_and_null)
+* [JavaScript’s History and How it Led To ReactJS](https://thenewstack.io/javascripts-history-and-how-it-led-to-reactjs/)
+* [Popularity - Brendan Eich](https://brendaneich.com/2008/04/popularity/)
+* [BarCampNYC Wrap-up](https://johnresig.com/blog/barcampnyc-wrap-up/)
+* [History break: How did John build jQuery?](https://www.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery)
+* [The most popular JavaScript library, jQuery, is now 10 years old](https://thenextweb.com/dd/2016/01/14/the-most-popular-javascript-library-jquery-is-now-10-years-old/)
+* [One Year of Open-Source React](https://reactjs.org/blog/2014/05/29/one-year-of-open-source-react.html)
+* [React: Facebook's latest Javascript client library, now open sourced](https://www.reddit.com/r/programming/comments/1fak87/react_facebooks_latest_javascript_client_library/)
+* [Relicensing React, Jest, Flow, and Immutable.js](https://news.ycombinator.com/item?id=15316175)
+* [Vue.js: JavaScript MVVM made simple](https://news.ycombinator.com/item?id=7169288)
+* [First Week of Launching Vue.js](http://blog.evanyou.me/2014/02/11/first-week-of-launching-an-oss-project/)
+* [Evan You](https://betweenthewires.org/2016/11/03/evan-you/)
+* [Internet Trends](http://www.kpcb.com/internet-trends)
