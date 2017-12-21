@@ -14,10 +14,10 @@ title: 关于
 
 
 ## Skills
-* **精通：**<del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
-* **熟练：**FED
-* **熟悉：**CS 基础
-* **了解：**Web Tech Stack
+* **精通：** <del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
+* **熟练：** FED
+* **熟悉：** CS 基础
+* **了解：** Web Tech Stack
 
 
 ## Side Projects
