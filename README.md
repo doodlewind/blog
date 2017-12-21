@@ -2,20 +2,20 @@
 📝 My tech blog.
 
 ## About This Blog
-This blog is my tech blog deployed on [coding pages](https://coding.net/pages/). Main modules includes:
+This blog is my tech blog deployed on [coding pages](https://coding.net/pages/). Main modules include:
 
 * 100+ Markdown posts.
 * Hexo configurations.
 * Custom theme with static front end demos. (Standalone repo maintained [here](https://github.com/doodlewind/jacman)).
 
-Beside front end, I'm trying to combine technology and humanity in blog posts. Your involvement is **welcomed** if your're also interested in this.
+Besides front end, I'm trying to combine technology and humanity in blog posts. Your involvement is **welcomed** if your're also interested in this.
 
 ## Quick Links
 * [All Posts](https://github.com/doodlewind/blog-src/tree/master/source/_posts)
 * [Idea Pool](https://github.com/doodlewind/blog-src/blob/master/source/_todo/ideas.md)
 * [About Me](https://github.com/doodlewind/blog-src/blob/master/source/about/index.md)
 
-## Participate
+## Participation
 Issues and pull requests are super welcomed for:
 
 * Propose ideas you're interested in.
@@ -37,6 +37,8 @@ hexo server
 ```
 
 To update the site, `hexo deploy` helps. But generally please submit issue or pull request for this 🙂
+
+The columns on [juejin.im](https://juejin.im/user/57d732a7816dfa00545434b2) and [zhihu.com](https://zhuanlan.zhihu.com/fe-fantasy) are manually maintained by pasting content derived from here. For participation related to these columns, feel free to contact me 📪
 
 ## License
 [CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0)
