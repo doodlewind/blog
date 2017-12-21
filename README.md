@@ -1,7 +1,4 @@
 # [blog](http://ewind.us/)
-📝 My tech blog.
-
-## About This Blog
 This blog is my tech blog deployed on [coding pages](https://coding.net/pages/). Main modules include:
 
 * 100+ Markdown posts.
