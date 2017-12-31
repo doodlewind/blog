@@ -12,6 +12,7 @@
 
 ## Thoughts
 - 语文知识对写好代码有多重要？
+- 你真的精通 HTML 吗？
 - 如何在成为 Github 上的南郭先生
 	- Issue 刷绿
 	- Fork 挂项目
