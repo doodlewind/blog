@@ -190,7 +190,7 @@ const f = x => Promise.resolve(x + 6)
 
 // 下面两个值相等
 const left = Promise.resolve(value).then(f)
-const right = f(value);
+const right = f(value)
 ```
 
 其次，作用到非单位元 `m` 上的 `unit`，结果还是 `m` 本身：
