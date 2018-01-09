@@ -200,7 +200,7 @@ const value = 6
 
 // 下面两个值相等
 const left = Promise.resolve(value)
-const right = Promise.resolve(value).then(x=> Promise.resolve(x))
+const right = Promise.resolve(value).then(x => Promise.resolve(x))
 ```
 
 至于**结合律**则是这样的条件：`(a • b) • c` 等于 `a • (b • c)`：
