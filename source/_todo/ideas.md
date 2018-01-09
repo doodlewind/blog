@@ -14,11 +14,11 @@
 ## Thoughts
 - 语文知识对写好代码有多重要？
 - 你真的精通 HTML 吗？
-- 如何在成为 Github 上的南郭先生
+- 简单真诚的 Github 摸鱼灌水指南
 	- Issue 刷绿
 	- Fork 挂项目
 	- Fix lint / typo
-	- Followers 爬虫
+	- commit / Issue / PR / Merge 素质四连
 - 如何鉴别与改善潦草的烂代码
 - 前端的基础是 HTML + CSS + JS 吗？
 - 从软件工程看《旧制度与大革命》：为什么法国重构失败了？
