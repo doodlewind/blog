@@ -30,4 +30,5 @@
 - 别被语言专家忽悠瘸了：this 只应该有一种用法
 
 ## Projects
+- Gif Canvas 库
 - package.json 维护者依赖树分析
