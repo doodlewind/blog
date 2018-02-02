@@ -32,5 +32,5 @@
 
 ## Projects
 - Gif Canvas 库
-- Node 以图搜图
+- 命令行以图搜图
 - package.json 维护者依赖树分析
