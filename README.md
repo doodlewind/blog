@@ -37,5 +37,8 @@ To update the site, `hexo deploy` helps. But generally please submit issue or pu
 
 The columns on [juejin.im](https://juejin.im/user/57d732a7816dfa00545434b2) and [zhihu.com](https://zhuanlan.zhihu.com/fe-fantasy) are manually maintained by pasting content derived from here. For participation related to these columns, feel free to contact me 📪
 
+## Donate
+BTC: 1NAggoiG9fkXqT9MgCjkaL1YAL2mqcQbWP
+
 ## License
 [CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0)
