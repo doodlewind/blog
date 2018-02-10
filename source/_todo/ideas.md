@@ -33,5 +33,6 @@
 
 ## Projects
 - Gif Canvas 库
+- CS BSP 地图渲染
 - 命令行以图搜图
 - package.json 维护者依赖树分析
