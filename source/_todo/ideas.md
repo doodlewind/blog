@@ -33,6 +33,7 @@
 
 ## Projects
 - Gif Canvas 库
+- 图片链接 QR Code 浏览器插件
 - CS BSP 地图渲染
 - 命令行以图搜图
 - package.json 维护者依赖树分析
