@@ -18,7 +18,7 @@ title: Mac 上为移动设备配置代理的懒方法
 ## 背景
 我的 Switch 游戏截图默认只支持分享到 FB 和推特，不能直接复制到本地。但 Switch 本身的 Proxy 功能又十分孱弱（只支持最基本的 HTTP 协议代理），那么想要导出机内截图时，该如何为此配置网络呢？
 
-只要我们在 Mac 上已经安装了支持 SOCKS 协议的代理客户端，那么我们只需使用 Privoxy 工具：
+只要我们在 Mac 上已经安装了支持 SOCKS 协议的代理客户端，那么我们只需要：
 
 1. 将 SOCKS5 协议代理 pipe 为 HTTP 协议代理。
 2. 在移动设备上连接这个 HTTP 代理。
@@ -32,7 +32,7 @@ title: Mac 上为移动设备配置代理的懒方法
 brew install privoxy
 ```
 
-安装成功后，我们无需 `sudo` 权限就能配置、启停代理。要配置 SOCKS5 到为配置文件追加如下两行即可：
+安装成功后，我们无需 `sudo` 权限就能配置、启停代理。只需为配置文件追加如下两行即可：
 
 ``` bash
 echo 'listen-address 0.0.0.0:8118' >> /usr/local/etc/privoxy/config
