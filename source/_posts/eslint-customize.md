@@ -83,35 +83,13 @@ ESLint 使用 [Espree](https://github.com/eslint/espree) 这个 JavaScript parse
   "type": "Program",
   "start": 14,
   "end": 14,
-  "loc": {
-    "start": {
-      "line": 1,
-      "column": 14
-    },
-    "end": {
-      "line": 1,
-      "column": 14
-    }
-  },
-  "sourceType": "module",
   "body": [],
-  "leadingComments": null,
   "innerComments": [
     {
       "type": "Line",
       "value": " hello world",
       "start": 0,
-      "end": 14,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 14
-        }
-      },
+      "end": 14
       "range": [
         0,
         12
