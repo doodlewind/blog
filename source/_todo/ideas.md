@@ -16,8 +16,9 @@
 
 ## Thoughts
 * 语文知识对写好代码有多重要？
+* 无处不在的 batch update
 * 你真的精通 HTML 吗？
-* 简单真诚的 Github 摸鱼灌水指南
+* 简单真诚的 GitHub 摸鱼灌水指南
   * Issue 刷绿
   * Fork 挂项目
   * Fix lint / typo
