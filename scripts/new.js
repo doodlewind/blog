@@ -4,8 +4,7 @@ const fs = require('fs')
 const title = process.argv[2] || 'empty-new-post'
 const date = new Date().toISOString().slice(0, 10)
 
-const template = `---
-categories: Note
+const template = `categories: Note
 
 tags:
 
@@ -17,6 +16,12 @@ toc: true
 
 title: ${title}
 ---
+
+TODO
+
+<!--more-->
+
+TODO
 `
 
 const filePath = path.resolve('./source/_posts', title + '.md')
