@@ -107,5 +107,15 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 * 配置 Finder 左侧的快捷入口，并把默认目录改为 `下载`
 * 配置终端主题
 
+以下是一些常用的命令行配置路径及文件：
+
+``` bash
+# nginx 配置文件路径
+/usr/local/etc/nginx/servers
+
+# nginx 默认配置
+/usr/local/etc/nginx/nginx.conf
+```
+
 ## Wrap up
 还不够多吗？折腾一个全新安装的桌面系统确实需要不少时间精力，并且也没有类似 Docker 这样的高效工具。因此这里只列出尽可能少而直接的内容，希望对大家有所帮助~若有遗漏或补充，欢迎指出哦 😀
