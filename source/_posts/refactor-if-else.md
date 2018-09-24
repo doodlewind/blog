@@ -51,7 +51,7 @@ function demo (a, b, c) {
 
 流程图形如：
 
-![if-if-before](http://7u2gqx.com1.z0.glb.clouddn.com/wiki-arch.003.jpeg)
+![if-if-before](/images/wiki-arch.003.jpeg)
 
 它通过从上到下嵌套的 `if`，让单个函数内的控制流不停增长。*不要以为控制流增长时，复杂度只会线性增加*。我们知道函数处理的是数据，而每个 `if` 内一般都会有对数据的处理逻辑。那么，即便在不存在嵌套的情形下，如果有 3 段这样的 `if`，那么根据每个 `if` 是否执行，数据状态就有 2 ^ 3 = 8 种。如果有 6 段，那么状态就有 2 ^ 6 = 64 种。从而在项目规模扩大时，函数的调试难度会**指数级**上升！这在数量级上，与《人月神话》的经验一致。
 
@@ -79,7 +79,7 @@ function demo (a, b, c) {
 
 流程图形如：
 
-![else-if-before](http://7u2gqx.com1.z0.glb.clouddn.com/wiki-arch.005.jpeg)
+![else-if-before](/images/wiki-arch.005.jpeg)
 
 `else if` 最终只会走入其中的某一个分支，因此并不会出现上面组合爆炸的情形。但是，在深度嵌套时，复杂度同样不低。假设嵌套 3 层，每层存在 3 个 `else if`，那么这时就会出现 3 ^ 3 = 27 个出口。如果每种出口对应一种处理数据的方式，那么一个函数内封装这么多逻辑，也显然是违背单一职责原则的。并且，上述两种类型可以无缝组合，进一步增加复杂度，降低可读性。
 
@@ -91,7 +91,7 @@ function demo (a, b, c) {
 ### 基本情形
 对看起来复杂度增长最快的 `if...if` 型面条代码，通过基本的函数即可将其拆分。下图中每个绿框代表拆分出的一个新函数：
 
-![if-if-after](http://7u2gqx.com1.z0.glb.clouddn.com/wiki-arch.004.jpeg)
+![if-if-after](/images/wiki-arch.004.jpeg)
 
 由于现代编程语言摒弃了 `goto`，因此不论控制流再复杂，函数体内代码的执行顺序也都是从上而下的。因此，我们完全有能力**在不改变控制流逻辑的前提下**，将一个单体的大函数，自上而下拆逐步分为多个小函数，而后逐个调用之。这是有经验的同学经常使用的技巧，具体代码实现在此不做赘述了。
 
@@ -119,7 +119,7 @@ function demo (a, b, c) {
 
 每个 `else if` 中的逻辑都被改写为一个独立的函数，这时我们就能够将流程按照如下所示的方式拆分了：
 
-![else-if-lookup](http://7u2gqx.com1.z0.glb.clouddn.com/wiki-arch.006.jpeg)
+![else-if-lookup](/images/wiki-arch.006.jpeg)
 
 对于先天支持反射的脚本语言来说，这也算是较为 trivial 的技巧了。但对于更复杂的 `else if` 条件，这种方式会重新把控制流的复杂度集中到处理【该走哪个分支】问题的 `determineAction` 中。有没有更好的处理方式呢？
 
@@ -128,7 +128,7 @@ function demo (a, b, c) {
 
 对 `else if` 而言，注意到每个分支其实是**从上到下依次判断，最后仅走入其中一个**的。这就意味着，我们可以通过存储【判定规则】的数组，来实现这种行为。如果规则匹配，那么就执行这条规则对应的分支。我们把这样的数组称为【职责链】，这种模式下的执行流程如下图：
 
-![else-if-chain](http://7u2gqx.com1.z0.glb.clouddn.com/wiki-arch.007.jpeg)
+![else-if-chain](/images/wiki-arch.007.jpeg)
 
 在代码实现上，我们可以通过一个职责链数组来定义与 `else if` 完全等效的规则：
 

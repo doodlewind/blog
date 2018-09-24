@@ -45,15 +45,15 @@ title: 聊聊对焦锁、测光锁和曝光补偿
 
 下面来一组体现不同曝光补偿值区别的样张，随手拍的：
 
-![0EV](http://7u2gqx.com1.z0.glb.clouddn.com/ev0.JPG)
+![0EV](/images/ev0.JPG)
 
-![-0.3EV](http://7u2gqx.com1.z0.glb.clouddn.com/ev-03.JPG)
+![-0.3EV](/images/ev-03.JPG)
 
-![-0.7EV](http://7u2gqx.com1.z0.glb.clouddn.com/ev-07.JPG)
+![-0.7EV](/images/ev-07.JPG)
 
-![+0.3EV](http://7u2gqx.com1.z0.glb.clouddn.com/ev+03.JPG)
+![+0.3EV](/images/ev+03.JPG)
 
-![+0.7EV](http://7u2gqx.com1.z0.glb.clouddn.com/ev+07.JPG)
+![+0.7EV](/images/ev+07.JPG)
 
 下面问题来了，这些照片里，你认为哪一张是最好的呢？我想应该不是默认 0EV 的那一张吧。其实，可以说最后两张偏亮的照片更符合我们的视觉预期。那么问题来了，为什么相机「默认」的不是最好的呢？难道是相机的测光功能有问题？不！这时候终于可以理直气壮地说出这句经典名言了——
 

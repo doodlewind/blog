@@ -19,7 +19,7 @@ title: 基于 Vue / Webpack / WebSocket 的前端远程调试工具
 ## Demo
 如下所示，只需在待调试页面引入调试脚本，即可在 FlyLog 后台显示其日志、报错和加载性能信息。
 
-![flylog-demo](http://7u2gqx.com1.z0.glb.clouddn.com/flylog-demo.png)
+![flylog-demo](/images/flylog-demo.png)
 
 体验 Demo 效果，只需安装 FlyLog 到本地运行后，访问 `localhost:3000` 右上的 Doc 链接即可。
 
@@ -327,4 +327,4 @@ Vue 2.0 中废弃了 Angular 风格的 `filterBy` 方法，使用计算属性取
 ## 彩蛋
 FlyLog 项目的配色来自这张 CG
 
-![why-are-you-so-good-at-it](http://7u2gqx.com1.z0.glb.clouddn.com/color-scheme.jpg)
+![why-are-you-so-good-at-it](/images/color-scheme.jpg)

@@ -13,7 +13,7 @@ toc: false
 title: 用 Python 了解自己的摄影风格
 ---
 
-![用Python了解自己的摄影风格](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格0.jpg)
+![用Python了解自己的摄影风格](/images/用Python了解自己的摄影风格0.jpg)
 
 手持单反，却在镜头升级的茫茫选择中飘忽不定？试着了解自己吧！通过 Python 读取每张图的 EXIF 信息，统计自己出片的光圈、快门速度、ISO、焦距，可以很方便地了解到自己拍摄的习惯，并且发现瓶颈。
 
@@ -71,17 +71,17 @@ def count_classify(array):
 
 把 EXIF 列表中的每个光圈、快门等参数传入上面的函数，就可以输出结果啦~
 
-![结果](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格1.png)
+![结果](/images/用Python了解自己的摄影风格1.png)
 
 把数据 copy 进 Keynote 以后画几个饼图就一目了然咯
 
-![快门速度](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格2.png)
+![快门速度](/images/用Python了解自己的摄影风格2.png)
 
-![ISO](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格3.png)
+![ISO](/images/用Python了解自己的摄影风格3.png)
 
-![焦距](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格4.png)
+![焦距](/images/用Python了解自己的摄影风格4.png)
 
-![光圈](http://7u2gqx.com1.z0.glb.clouddn.com/用Python了解自己的摄影风格5.png)
+![光圈](/images/用Python了解自己的摄影风格5.png)
 
 嗯，发现了没有，论光圈，虽然半壁江山都属于 f8，不过看看 f3.5-5.6 平分秋色的拍摄需求，显然应该升级一个大光圈的镜头。所以，定焦还是变焦？图上 18-50 的焦段分布并不能支持『35 通吃』或者『50 够用』的说法，一支变焦镜头应该更能满足需求。再看看 ISO 和快门速度，显然低感 + 慢门的配合占了多数，毕竟在魔都拍夜景不少嘛O(∩_∩)O
 希望这次复活能有动力持续更新 blog >_< 准备概率论 final 去啦！

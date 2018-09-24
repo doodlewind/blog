@@ -11,7 +11,7 @@ toc: false
 title: 跳过 Nexus 的谷歌联网激活
 ---
 
-![Nexus 7](http://7u2gqx.com1.z0.glb.clouddn.com/跳过Nexus的谷歌联网激活1.jpg)
+![Nexus 7](/images/跳过Nexus的谷歌联网激活1.jpg)
 
 遇上了一个奇葩的死锁：重置 Nexus 7 后需要连接谷歌激活，但不激活就没法上谷歌（理论上当然可以通过挂了 VPN 或登录了校园网的电脑热点，但极为先进的 Yosemite 系统开创性地抽风了）。
 

@@ -15,7 +15,7 @@ title: 自制五子棋（3）包装发布
 
 做了些交互的改进后，来试试这个 [Sifu 五子棋](http://ewind.us/h5/gomoku) 吧~
 
-![Sifu](http://7u2gqx.com1.z0.glb.clouddn.com/自制五子棋（3）包装发布1.jpg)
+![Sifu](/images/自制五子棋（3）包装发布1.jpg)
 
 下面就简要地描述一下发布前的几项改进吧。完整的代码可以看[这里](https://github.com/doodlewind/gomoku)。
 

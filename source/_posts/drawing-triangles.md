@@ -13,7 +13,7 @@ toc: true
 title: 三角形的 N 种画法与浏览器的开放世界
 ---
 
-![zelda-title](http://7u2gqx.com1.z0.glb.clouddn.com/zelda-title.jpeg)
+![zelda-title](/images/zelda-title.jpeg)
 
 最近，我完全沉迷在了任天堂 Switch 上的《塞尔达传说：荒野之息》里，以至于专栏都快要停更了（罪过罪过）。大概每个塞尔达玩家都会有这个疑问，那就是**这个游戏为什么这么好玩？！**非常有意思的是，这个问题的答案似乎和「**前端为什么这么日新月异**」有着微妙的关系，这让我有了一些全新的认识…
 

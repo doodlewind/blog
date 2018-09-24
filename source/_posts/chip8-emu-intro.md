@@ -20,7 +20,7 @@ title: 如何用 3KB 不到的 JavaScript 实现微机模拟器
 ## 模拟器开发入门
 如果你觉得下面的理论有些枯燥，不妨直接打开玩玩我们最后实现的成果：[Merry8](https://ewind.us/h5/merry8) 模拟器。它用 2.5KB 的 JavaScript 代码，支持了一门上世纪 70 年代的汇编语言，能够让你在 Canvas 上体验当年用这门语言编写的 PONG 游戏（是的，就是那个来回弹跳的乒乓球），还支持通过 [NPM](https://www.npmjs.com/package/merry8) 来安装并使用它，<del>觉得有意思的话请点个 [Star](https://github.com/doodlewind/merry8) 再走哦😀</del>
 
-![merry8-pong](http://7u2gqx.com1.z0.glb.clouddn.com/merry8.png)
+![merry8-pong](/images/merry8.png)
 
 前戏过后就是正题啦。可能对于绝大多数同学来说，模拟器都是一个陌生的概念，那么它大概是个什么样的东西呢？
 

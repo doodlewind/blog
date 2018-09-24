@@ -20,7 +20,7 @@ title: Web 魔方模拟器的设计与实现
 ## 魔方的抽象
 拆解过魔方的同学可能知道，现实中魔方的内部结构包含了中轴、弹簧、螺丝等机械装置。但当我们只是想要「模拟」它的时候，我们只需抓住它最显著的性质即可——3x3x3 的一组立方体：
 
-![cube-render-loop](http://7u2gqx.com1.z0.glb.clouddn.com/cube-render-loop.gif)
+![cube-render-loop](/images/cube-render-loop.gif)
 
 
 ### 基本概念
@@ -35,7 +35,7 @@ title: Web 魔方模拟器的设计与实现
 
 设想你的手里「端正地」拿着一个魔方，我们将此时面对你的那一面定义为 `Front`，背对的一面定义为 `Back`。类似地，我们有了 `Left` / `Right` / `Upper` / `Down` 来标识其余各面。当你旋转某一面时，我们用这一面的简写（`F` / `B` / `L` / `R` / `U` / `D`）来标识在这一面上的一次**顺时针 90 度**旋转。对于一次逆时针的旋转，我们则用 `F'` / `U'` 这样带 `'` 的记号来表达。如果你旋转了 180 度，那么可以用形如 `R2` / `U2` 的方式表示。如下图的 5 次操作，如果我们约定蓝色一面为 Front，其旋转序列就是 `F' R' L' B' F'`：
 
-![cube-solve](http://7u2gqx.com1.z0.glb.clouddn.com/cube-solve.gif)
+![cube-solve](/images/cube-solve.gif)
 
 关于魔方的基础结构和变换方式，知道这些就足够了。下面我们需要考虑这个问题：**如何设计一个数据结构来保存的魔方状态，并使用编程语言来实现某个旋转变换呢？**
 
@@ -111,7 +111,7 @@ rotate (center, clockwise = true) {
 
 在前文中，我们设计的数据结构使用了长度为 27 的数组来存储 `[-1, -1, -1]` 到 `[1, 1, 1]` 的一系列块。在一个三重的 `for` 循环里，逐个将这些块绘制到屏幕上的逻辑大概就像前面看到的这张图：
 
-![cube-render-loop](http://7u2gqx.com1.z0.glb.clouddn.com/cube-render-loop.gif)
+![cube-render-loop](/images/cube-render-loop.gif)
 
 需要注意的是，并不是越接近底层的代码就一定越快。例如在最早的实现中，笔者直接通过循环调用来自（或者说抄自）MDN 的 3D 立方体例程来完成 27 个小块的渲染。这时对于 27 个立方体区区不足千个顶点，60 帧绘制动画时的 CPU 占用率都可能跑满。经过定位，发现重复的 CPU 与 GPU 交互是一个大忌：从 CPU 向 GPU 传递数据，以及最终对 GPU 绘图 API 的调用，都具有较大的固定开销。一般我们需要将一帧中 Draw Call 的数量控制在 20 个以内，对于 27 个立方体就使用 27 次 Draw Call 的做法显然是个反模式。在将代码改造为一次批量传入全部顶点并调用一次 `drawElements` 后，即可实现流畅的 60 帧动画了 :)
 
@@ -181,7 +181,7 @@ if (Array.isArray(move) && move.length > 1) {
 
 在开始前，有必要强调一个前文中一笔带过的概念：**在旋转时，魔方中心块之间的相对位置始终不会发生变化**。如下图：
 
-![cube-centers](http://7u2gqx.com1.z0.glb.clouddn.com/cube-centers.gif)
+![cube-centers](/images/cube-centers.gif)
 
 因此，在魔方旋转时，我们只需关注角块和棱块是否归位即可。在 CFOP 层先法中，归位全部角块和棱块的步骤，被分为了逐次递进的四步：
 
@@ -195,15 +195,15 @@ if (Array.isArray(move) && move.length > 1) {
 ### 底层十字
 这一步可以说是最简单也最难的，在此我们的目标是还原四个底部棱块，像这样：
 
-![cube-cross-end](http://7u2gqx.com1.z0.glb.clouddn.com/cube-cross-end.gif)
+![cube-cross-end](/images/cube-cross-end.gif)
 
 对一个完全打乱的魔方，每个目标棱块都可能以两种不同的朝向出现在任意一个棱块的位置上。为什么有两种朝向呢？请看下图：
 
-![cube-cross-a](http://7u2gqx.com1.z0.glb.clouddn.com/cube-cross-a.gif)
+![cube-cross-a](/images/cube-cross-a.gif)
 
 这是最简单的一种情形，此时直接做一次 `R2` 旋转即可使红白棱块归位。但下面这种情况也是完全合法的：
 
-![cube-cross-b](http://7u2gqx.com1.z0.glb.clouddn.com/cube-cross-b.gif)
+![cube-cross-b](/images/cube-cross-b.gif)
 
 这时由于棱块的朝向不同，所需的步骤就完全不同了。但总的来说，构成十字所需的棱块可能出现的位置总是有限的。拆解分类出所有可能的情形后，我们不难使用**贪心策略**来匹配：
 
@@ -230,11 +230,11 @@ solveCross () {
 ### 底部两层
 这里的目标是在底部十字完成的基础上，完成底部两层所有块的归位。我们的目标是实现这样的状态：
 
-![cube-f2l-solved](http://7u2gqx.com1.z0.glb.clouddn.com/cube-f2l-solved.gif)
+![cube-f2l-solved](/images/cube-f2l-solved.gif)
 
 这个步骤中，我们以 Slot 和 Pair 的概念作为还原的基本元素。相邻的十字之间所间隔的一个棱和一个角，构成了一个 Slot，而它们所对应的两个目标块则称为一个 Pair。故而这个步骤中，我们只需要重复四次将 Pair 放入 Slot 中的操作即可。一次最简单的操作大概是这样的：
 
-![cube-f2l-pair](http://7u2gqx.com1.z0.glb.clouddn.com/cube-f2l-pair.gif)
+![cube-f2l-pair](/images/cube-f2l-pair.gif)
 
 上图将顶层的一对 Pair 放入了蓝红相间的 Slot 中。类似于之前解十字时的情形，这一步中的每个棱块和角块也有不同的位置和朝向。如果它们都在顶层，那么我们可以通过已有的匹配规则来实现匹配；如果它们在其它的 Slot 中，那么我们就递归地执行「将 Pair 从其它 Slot 中旋出」的算法，直到这组 Pair 都位于顶层为止。
 
@@ -244,22 +244,22 @@ solveCross () {
 完成了前两层的还原后，我们最后所需要处理的就是顶层的 8 个棱块与角块了。首先是**顶面同色**的步骤，将各块调整到正确的朝向，实现顶面同色（一般采用白色作为底面，此时按照约定，黄色为顶面）：
 
 
-![cube-oll](http://7u2gqx.com1.z0.glb.clouddn.com/cube-oll.gif)
+![cube-oll](/images/cube-oll.gif)
 
 而后是**顶层顺序**的调整。这一步在不改变棱与角朝向的前提下，改变它们的排列顺序，最终完成整个魔方的还原：
 
-![cube-pll](http://7u2gqx.com1.z0.glb.clouddn.com/cube-pll.gif)
+![cube-pll](/images/cube-pll.gif)
 
 从前两层的还原到顶层的还原步骤中，都有大量的魔方公式规则可供匹配使用。如何将这些现成的规则应用到还原算法中呢？我们可以使用**规则驱动**的方式来使用它们。
 
 ### 规则驱动设计
 了解编译过程的同学应该知道，语法分析的过程可以通过编写一系列的语法规则来实现。而在魔方还原时，我们也有大量的规则可供使用。一条规则的匹配部分大概是这样的：
 
-![cube-oll-demo](http://7u2gqx.com1.z0.glb.clouddn.com/cube-oll-demo.gif)
+![cube-oll-demo](/images/cube-oll-demo.gif)
 
 在顶面同色过程中，满足上述 "pattern" 的顶面，可以通过 `U L U' R' U L' U' R` 的步骤来还原。类似地，在还原顶层顺序时，规则的匹配方式形如这样：
 
-![cube-pll-demo](http://7u2gqx.com1.z0.glb.clouddn.com/cube-pll-demo.gif)
+![cube-pll-demo](/images/cube-pll-demo.gif)
 
 满足这条规则的顶层状态可以通过该规则所定义的步骤求解：`R2 U' R' U' R U R U R U' R`。这样一来，**只需要实现对规则的匹配和执行操作，规则的逻辑就可以完全与代码逻辑解耦**，变为可配置的 JSON 格式数据。用于还原前两层的一条规则格式形如：
 

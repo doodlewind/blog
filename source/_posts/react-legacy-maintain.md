@@ -141,7 +141,7 @@ render() {
 
 首先，在优化公共依赖方面，难点并不是【如何更改公共依赖】，而是如何获知【有哪些依赖需要被提取为公共依赖】。在这方面，需要的是一个查看各 Bundle 内容及尺寸的可视化工具，可以使用 [webpack-bundle-analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) 这一 Webpack 插件来实现。使用该插件的方式也很简单，直接将其添加在 Webpack 的 plugins 配置中，重新执行打包命令即可。打包成功后，会弹出浏览器窗口展示各 Bundle 的公共依赖，如下图是优化前的公共依赖配置：
 
-![bundle-before](http://7u2gqx.com1.z0.glb.clouddn.com/bundle-before.png)
+![bundle-before](/images/bundle-before.png)
 
 可以发现原始的依赖配置中，位于图中角落的 common 包仅包括了原始的 React，而组件库、lodash、moment 等依赖在每个页面包中都重复出现了。因此，在 Webpack 的 entry 配置字段中，为 `common` 包添加 `['babel-polyfill', 'lodash', 'moment']` 等依赖名后，即可实现公共依赖的提取。
 
@@ -153,7 +153,7 @@ new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
 
 这一行代码能够直接减少开发环境 300K 的包大小！在进行了依赖优化后，得到的包体积可视化为下图：
 
-![bundle-after](http://7u2gqx.com1.z0.glb.clouddn.com/bundle-after.png)
+![bundle-after](/images/bundle-after.png)
 
 可以发现，common 的大小得到了大幅增加，而各个页面的业务包体积则减少了 2/3 以上。不过，在这个优化方向上并没有做到极致。由于 Webpack 1 不支持原生的 Tree Shaking 功能，导致了 UI 组件库即便通过 `import { xxx }` 语法引入，最终还是会将整个组件库导入公共依赖包中，没有做到按需加载。而相应的 `import` 插件又存在配置上的不便，其结果是最终没有在这个项目中实现 UI 组件库的按需加载。当然，随着 Webpack 2 的普及，新项目中这应当不会成为问题。
 

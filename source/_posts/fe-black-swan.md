@@ -105,7 +105,7 @@ BarCamp 是一种由参与者相互分享的工作坊式会议，其议程内容
 
 在这一节的最后，让我们怀念一下当时的 jQuery 首页吧。那时候天还是蓝的，水还是绿的，北京的房价还只要 8000 一平……
 
-![jquery-debut](http://7u2gqx.com1.z0.glb.clouddn.com/jquery-debut.png)
+![jquery-debut](/images/jquery-debut.png)
 
 ## 饱受质疑的 React
 > 当我们开源 React 的时候，最早收到的反应是有疑问的。

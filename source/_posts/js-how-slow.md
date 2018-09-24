@@ -69,7 +69,7 @@ ffmpeg({
 ## 结论
 我们观察到了比较显著的性能差异：
 
-![benchmark](http://7u2gqx.com1.z0.glb.clouddn.com/ffmpeg-benchmark.png)
+![benchmark](/images/ffmpeg-benchmark.png)
 
 在这个计算密集型的场景下，JavaScript 的性能在原生的 **1/20** 左右，而 WASM 的性能可以达到原生的 **1/4** 左右。
 

@@ -12,7 +12,7 @@ toc: false
 title: APPSeed 协会主页上线
 ---
 
-![APPSeed](http://7u2gqx.com1.z0.glb.clouddn.com/APPSeed协会主页上线2.jpg)
+![APPSeed](/images/APPSeed协会主页上线2.jpg)
 
 [APPSeed](http://iappseed.com) 是初创的科大移动应用开发社团，由一群志在用技术为科大校园生活带来改变的同学们建立。而这个主页，就是我们 APPSeed 在 Web 上的根据地。
 
@@ -20,7 +20,7 @@ title: APPSeed 协会主页上线
 
 <!--more-->
 
-![APPSeed](http://7u2gqx.com1.z0.glb.clouddn.com/APPSeed协会主页上线1.jpg)
+![APPSeed](/images/APPSeed协会主页上线1.jpg)
 
 它在布局上应用了标准的响应式设计，主要的页面元素均可以良好地适配小屏幕设备。在配色上，它参考了 APPSeed 的第一个应用 ClubSeed，Blanched Almond 和 Light Coral 的配合毫不突兀。至于字体，这里则是应用了一位 APPSeed 成员所建议的无衬线体 AgencyFB，它的刚硬气质令整个页面风格更加洗练。最后，背景图片是我之前用过的初代 iPhone，使用 Tamron A16 配合外闪拍摄，后期对黑色做了提亮，并锐化了背部的 Logo 和划痕。私以为这台智能手机的鼻祖和 APPSeed 的气质十分契合呢。
 

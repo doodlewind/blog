@@ -19,15 +19,15 @@ title: 一个拖拽框背后的高中数学
 
 最近我在维护一个用于平面设计的编辑器项目。在编辑器的画布上，图片是支持拖拽、旋转和裁切的，像这样：
 
-![drag-normal](http://7u2gqx.com1.z0.glb.clouddn.com/math-debug-drag-normal.gif)
+![drag-normal](/images/math-debug-drag-normal.gif)
 
 为了保证图片裁切后始终可见，我们需要限制用户的拖拽范围。对于普通的图片，下面这种边界限制显然很容易实现：
 
-![trivial-limit](http://7u2gqx.com1.z0.glb.clouddn.com/trivial-limit.gif)
+![trivial-limit](/images/trivial-limit.gif)
 
 但是一旦图片存在旋转角度，这时的行为就显得很诡异了：
 
-![current](http://7u2gqx.com1.z0.glb.clouddn.com/math-debug-drag-current.gif)
+![current](/images/math-debug-drag-current.gif)
 
 这显然不是预期的行为，那么该如何修复这个 bug 呢？
 
@@ -102,7 +102,7 @@ y = ?x' + ?y'
 
 把这个正逆变换的公式应用到现在的代码上，就得到了这样的效果：
 
-![rotate-poc](http://7u2gqx.com1.z0.glb.clouddn.com/math-debug-clamp-rotate-poc.gif)
+![rotate-poc](/images/math-debug-clamp-rotate-poc.gif)
 
 看起来好像大功告成了啊！可惜这还不是终点……
 
@@ -110,7 +110,7 @@ y = ?x' + ?y'
 ## 瓶颈 3：一步之遥
 本来问题似乎已经解决了，但是在合并代码前的自测时，却发现旋转后的拖拽限制可能会出现一个莫名其妙的固定偏移量：
 
-![outer-offset](http://7u2gqx.com1.z0.glb.clouddn.com/math-debug-outer-offset.gif)
+![outer-offset](/images/math-debug-outer-offset.gif)
 
 这就让人头大了……算法看起来是正确的，一般情况和若干特殊情况下的效果也是正确的，但是少数情形下却有这么大的误差，实在是非常诡异。我依次排查了**新加入的代码**和用于获得偏移量的**胶水代码**，都没有找到问题所在。因为这个 bug，我不得不暂时放下了这个重构，优先处理一些其它的细节需求。
 
@@ -135,7 +135,7 @@ maxTop = rect.top + rect.height
 
 一个元素在浏览器内的位置，是相对于屏幕左上角的。但上文中的变换公式中，位置是相对于拖拽框中心点的。考虑这一因素之后，这几个变量的有效性就存疑了。对此我的尝试是：基于两个矩形**中心点之间的距离**去计算拖拽限制，而非直接利用现成的偏移量。由于中心点的间距抹除了初始位置对计算的影响，那么偏移量就应当是可以消除的。重构之后的代码用 `centerDeltaX` 和 `centerDeltaY` 替代了上面的中间变量，得到的效果如下所示：
 
-![fixed](http://7u2gqx.com1.z0.glb.clouddn.com/math-debug-fixed.gif)
+![fixed](/images/math-debug-fixed.gif)
 
 于是，最麻烦的 bug 就这样修复了~这个改进的收益还是有的：150+ 行的代码被优化到了 10+ 行的量级，代码执行路径上的分支也从 16 个优化到了 0 个。最后的版本如下所示：
 

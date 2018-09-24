@@ -17,7 +17,7 @@ title: NES模拟器笔记（2）系统架构
 
 ## 结构概览
 
-![structure.png](http://7u2gqx.com1.z0.glb.clouddn.com/NES模拟器入门笔记/structure.png)
+![structure.png](/images/NES模拟器入门笔记/structure.png)
 
 上图即是 NES 的结构图。可以看到，一台 PC 的几个主要部件，在 NES 系统里被分置于主机和卡带两个部分之中。ROM 在卡带中，而 CPU、PPU、APU 和 RAM 位于主机内部。
 
@@ -34,7 +34,7 @@ title: NES模拟器笔记（2）系统架构
 
 ## CPU 概览
 
-![cpu-address](http://7u2gqx.com1.z0.glb.clouddn.com/NES模拟器入门笔记/cpu-address.png)
+![cpu-address](/images/NES模拟器入门笔记/cpu-address.png)
 
 上图展示了 NES 工作时 CPU 的地址空间。在第一篇入门指南中，提及了 CPU 的指令长度，但没有提及 CPU 对应的地址空间。实际上，虽然 6502 的指令长度是 8 位的，但它的地址总线却是 16 位的。这意味着它能够操作 `2^16 = 65536` 共 64KB 内存。在上图中，16 位地址就对应了 `$0000` 到 `$FFFF` 的范围。不同的厂商会对卡带做各种魔改（这种魔改在 NES ROM 中会通过两个 Mapper 标记位来确定），使得题图中 PRG 和 CHR 的大小最多能达到 512KB 和 256KB。
 
@@ -49,7 +49,7 @@ PPU 内既有用于存储 sprite 和调色板（存储颜色索引）的 RAM，�
 
 CPU 概览图中 `$2000` 到 `$4000` 的 PPU IO 端口部分，可以进一步的表示为下图：
 
-![ppu-address](http://7u2gqx.com1.z0.glb.clouddn.com/NES模拟器入门笔记/ppu-address.png)
+![ppu-address](/images/NES模拟器入门笔记/ppu-address.png)
 
 
 ## 图形系统概览
@@ -77,6 +77,6 @@ Attribute Table 中存储 2 位的颜色偏移量。在一个 2x2 的 tile 区�
 
 具体过程如下图所示。
 
-![tile-color-lookup](http://7u2gqx.com1.z0.glb.clouddn.com/NES模拟器入门笔记/tile-color-lookup.png)
+![tile-color-lookup](/images/NES模拟器入门笔记/tile-color-lookup.png)
 
 如果有疑问，可以直接访问[参考资料](http://www.nintendoage.com/forum/messageview.cfm?catid=22&threadid=4291)，十分详尽。

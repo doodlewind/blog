@@ -58,12 +58,12 @@ tcp4       0      0  *.8118                 *.*                    LISTEN
 ## 移动端配置
 在移动端设备的网络配置界面中，将代理地址设置为 Mac 的 IP 地址上的 8118 端口即可：
 
-![switch-config](http://7u2gqx.com1.z0.glb.clouddn.com/switch-config.jpg)
+![switch-config](/images/switch-config.jpg)
 
 Mac 的 IP 地址可以在终端上通过 `ifconfig | grep inet` 得到，或者在 `设置 → 网络` 中查看。
 
 完成配置后，让我们看看最后成功从 Switch 传到 FB 的截图吧：
 
-![zelda](http://7u2gqx.com1.z0.glb.clouddn.com/zelda-0021.jpg)
+![zelda](/images/zelda-0021.jpg)
 
 😎

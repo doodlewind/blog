@@ -50,14 +50,14 @@ title: 移动端逆袭！iPad 的 JavaScript 性能已超越 rMBP
 ### SunSpider 果兔兔
 安兔兔跑分广受诟病的一点，在于它接收了某些手机厂商的投资而难以保证公正性。在前端领域这是不存在的，因为所有的主流性能测试都是浏览器厂商而不是手机厂商维护的…SunSpider 就是 Webkit 出品的老牌测试，包含加解密、数据结构、位运算、正则等常见操作。鉴于 Webkit 和苹果的关系，把它叫做果兔兔也不为过。测试结果截图如下：
 
-![chart-sunspider](http://7u2gqx.com1.z0.glb.clouddn.com/mobile-js-benchmark-chart.001.jpeg)
+![chart-sunspider](/images/mobile-js-benchmark-chart.001.jpeg)
 
 第一名是 iPad Pro，第二名是 rMBP，最后是 iPhone SE。看起来 Chrome 在这项评测中性能意外的低，这是为什么呢？由于 SunSpider 本身的 micro benchmark 方式被 Google 团队认为已经不匹配 JS 引擎的优化机制，因而他们放弃了 SunSpider，转而开发出了自己的 Octane。
 
 ### Octane 谷兔兔
 Chromium 团队维护的 Octane 也算是谷歌亲儿子了。它除了数学运算外，还加入了不少编译、CPU 模拟、GC 性能方面的指标。我们看看这个评测的结果：
 
-![chart-octane](http://7u2gqx.com1.z0.glb.clouddn.com/mobile-js-benchmark-chart.002.jpeg)
+![chart-octane](/images/mobile-js-benchmark-chart.002.jpeg)
 
 iPad Pro 继续领跑，rMBP Chrome 的分数明显靠谱了很多，但离桌面版 Safari 还有距离。iPhone SE 依旧路人…
 
@@ -66,7 +66,7 @@ iPad Pro 继续领跑，rMBP Chrome 的分数明显靠谱了很多，但离桌�
 ### JSPerf 脏兔兔
 上面的几个评测指标有个共同的问题，就是只关注 JavaScript 语言本身的执行速度，和 DOM 渲染这种比较【脏】但是又和用户体验息息相关的内容相比，区分度可能还不够强。因此我们在 JSPerf 上做了一个简单的 DOM 操作测试：
 
-![chart-dom](http://7u2gqx.com1.z0.glb.clouddn.com/mobile-js-benchmark-chart.003.jpeg)
+![chart-dom](/images/mobile-js-benchmark-chart.003.jpeg)
 
 看起来谷歌又一次负优化了……不过 `iPad Pro > rMBP > iPhone SE` 的顺序仍然准确。
 
@@ -91,22 +91,22 @@ iPad Pro 继续领跑，rMBP Chrome 的分数明显靠谱了很多，但离桌�
 这是绘制文中图表数据所对应的截图：
 
 #### SunSpider
-* [sunspider-ipp](http://7u2gqx.com1.z0.glb.clouddn.com/sunspider-ipp.PNG)
-* [sunspider-rmbp-safari](http://7u2gqx.com1.z0.glb.clouddn.com/sunspider-rmbp-safari.png)
-* [sunspider-rmbp-chrome](http://7u2gqx.com1.z0.glb.clouddn.com/sunspider-rmbp-chrome.png)
-* [sunspider-se](http://7u2gqx.com1.z0.glb.clouddn.com/sunspider-se.PNG)
+* [sunspider-ipp](/images/sunspider-ipp.PNG)
+* [sunspider-rmbp-safari](/images/sunspider-rmbp-safari.png)
+* [sunspider-rmbp-chrome](/images/sunspider-rmbp-chrome.png)
+* [sunspider-se](/images/sunspider-se.PNG)
 
 #### Octane
-* [octane-ipp](http://7u2gqx.com1.z0.glb.clouddn.com/octane-ipp.PNG)
-* [octane-rmbp-chrome](http://7u2gqx.com1.z0.glb.clouddn.com/octane-chrome.png)
-* [octane-rmbp-safari](http://7u2gqx.com1.z0.glb.clouddn.com/octane-safari.png)
-* [octane-se](http://7u2gqx.com1.z0.glb.clouddn.com/octane-se.PNG)
+* [octane-ipp](/images/octane-ipp.PNG)
+* [octane-rmbp-chrome](/images/octane-chrome.png)
+* [octane-rmbp-safari](/images/octane-safari.png)
+* [octane-se](/images/octane-se.PNG)
 
 #### JSPerf
-* [jsperf-ipp](http://7u2gqx.com1.z0.glb.clouddn.com/dom-ipp.png)
-* [jsperf-rmbp-chrome](http://7u2gqx.com1.z0.glb.clouddn.com/dom-chrome.png)
-* [jsperf-rmbp-safari](http://7u2gqx.com1.z0.glb.clouddn.com/dom-safari.png)
-* [jsperf-se](http://7u2gqx.com1.z0.glb.clouddn.com/dom-se.png)
+* [jsperf-ipp](/images/dom-ipp.png)
+* [jsperf-rmbp-chrome](/images/dom-chrome.png)
+* [jsperf-rmbp-safari](/images/dom-safari.png)
+* [jsperf-se](/images/dom-se.png)
 
 ### 测试地址
 这些评测代码只要点开链接就能直接跑哦，欢迎壕们在评论里晒出自己牛逼设备的分数！

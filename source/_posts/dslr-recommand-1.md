@@ -11,7 +11,7 @@ toc: false
 title: 微科普：从推荐单反说起（1）
 ---
 
-![DSLR](http://7u2gqx.com1.z0.glb.clouddn.com/微科普：从推荐单反说起（1）0.jpg)
+![DSLR](/images/微科普：从推荐单反说起（1）0.jpg)
 
 前两天，收到了一个百度知道上问烂了的问题：推荐下单反？
 

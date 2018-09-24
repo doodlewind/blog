@@ -38,7 +38,7 @@ ROM 可以用 UltraEdit 之类的二进制文件查看器来查看。而这些�
 
 用它打开一个游戏 ROM，就能看到存储为二进制格式的 ROM 数据啦。比如下图中的超级马里奥：
 
-![mario-1](http://7u2gqx.com1.z0.glb.clouddn.com/NES模拟器入门笔记/mario-1.jpg)
+![mario-1](/images/NES模拟器入门笔记/mario-1.jpg)
 
 除了开始的 16 个字节以外，图中的每一个字节都是一条指令。
 

@@ -13,7 +13,7 @@ toc: false
 title: Markdown 表格编辑器
 ---
 
-![editor](http://7u2gqx.com1.z0.glb.clouddn.com/Markdown表格编辑器1)
+![editor](/images/Markdown表格编辑器1)
 
 在用 Markdown 写《踏实地构建LR分析表》的时候，我深刻地感到了 Markdown 表格语法的坑爹之处——虽然排版出来挺不错，但是源码很难对齐，后面改起来更是难受。于是就有了这个可以让 Markdown 表格源码看起来更好看一点的小页面<!--more-->，希望对常用 Markdown 的同学有点帮助吧。
 
