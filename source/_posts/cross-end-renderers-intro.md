@@ -107,7 +107,7 @@ export const Renderer = ReactFiberReconciler({
 
 ![react-pixi-adapter](/images/custom-renderers/react-pixi-adapter.png)
 
-这就是基于 React 实现渲染层适配的基本实现了。
+这就是基于 React 接入渲染层适配的基本实现了。
 
 
 ## Vue 非侵入式适配
@@ -240,7 +240,7 @@ export default {
 
 
 ## Vue Mixin 适配
-将 DOM 节点绘制到 Canvas 的 [vnode2canvas](https://github.com/muwoo/vnode2canvas) 渲染库实现了一种特殊的技术，可以通过 Mixin 的方式实现对 Vnode 的监听。这就相当于实现了直接一个到 Canvas 的渲染层。这个方案的结构大致形如这样：
+将 DOM 节点绘制到 Canvas 的 [vnode2canvas](https://github.com/muwoo/vnode2canvas) 渲染库实现了一种特殊的技术，可以通过 Mixin 的方式实现对 Vnode 的监听。这就相当于实现了一个直接到 Canvas 的渲染层。这个方案的结构大致形如这样：
 
 ![custom-renderers-6](/images/custom-renderers/6.png)
 
