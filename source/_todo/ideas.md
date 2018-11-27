@@ -35,6 +35,7 @@
 
 
 ## Projects
+* Chrome Debug Log 扩展
 * Gif Canvas 库
 * 图片链接 QR Code 浏览器插件
 * CS BSP 地图渲染
