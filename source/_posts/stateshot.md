@@ -125,7 +125,7 @@ const rule = {
 这对应的 API 同样很简单：
 
 ``` js
-history.push(state, 0) // 指定仅对第一个 state 的子节点做哈希
+history.push(state, 0) // 指定仅对 state 的第一个子节点做哈希
 ```
 
 差点忘了，它的 API 还支持链式调用和 Promise，在 8012 年它们可能是「优雅」的标配了吧：
