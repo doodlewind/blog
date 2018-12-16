@@ -15,6 +15,8 @@ title: 一个前端开发者的 Surface Go 体验
 
 真香
 
+<!--more-->
+
 在入手 Surface Go 之前，笔者身边有这么些相关的设备（玩具）：
 
 * 日常工作用的 13 寸老款 MacBook Pro
