@@ -7,8 +7,7 @@
 * 使用 Debug 管理前端日志
 * 可视化定制业务逻辑控制流
 * 如何画出稳定的内存泄漏曲线
-* 字体是如何渲染的
-* layout 算法入门
+* 浅析前端字体解析算法
 
 ## Thoughts
 * 无处不在的 batch update
@@ -24,7 +23,6 @@
 
 
 ## Projects
-* Chrome Debug Log 扩展
 * 图片链接 QR Code 浏览器插件
 * CS BSP 地图渲染
 * package.json 维护者依赖树分析
