@@ -21,6 +21,8 @@ TODO
 
 <!--more-->
 
+![x](/images/${title}/x.jpg)
+
 TODO
 `
 
