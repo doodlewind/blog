@@ -9,8 +9,8 @@
 * 如何画出稳定的内存泄漏曲线
 
 ## Thoughts
+* 别再贩卖前端技能体系的焦虑了
 * 无处不在的 batch update
-* 你真的精通 HTML 吗
 * 简单真诚的 GitHub 摸鱼灌水指南
   * Issue 刷绿
   * Fork 挂项目
