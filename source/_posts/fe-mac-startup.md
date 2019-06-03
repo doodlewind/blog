@@ -60,6 +60,11 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 ### [CNPM](https://github.com/cnpm/cnpm)
 稳定的国内镜像，安装完成 Node 后，`npm install -g cnpm` 即可。
 
+还有个人常用的一些全局 Node 依赖：
+
+```
+npm i -g standard eslint lerna parcel-bundler
+```
 
 ## GUI 插件
 这类插件的共同特点是非常影响 GUI 行为，且平时根本不需要打开。虽然这类插件有很多，但**过多使用此类插件会使得你在使用同事的 Mac 时都非常不习惯**。因此仅列出两个个人评价最高的。下面几个
