@@ -162,7 +162,7 @@ int main(int argc, char *argv[])
     oledSetPixel(42, 42, 1);
 
     // 在用户输入后关闭屏幕
-    printf("Press ENTER for to quit!\n");
+    printf("Press ENTER to quit!\n");
     getchar();
     oledShutdown();
 }
