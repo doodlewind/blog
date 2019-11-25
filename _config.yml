@@ -4,15 +4,15 @@
 
 # Site
 title: ewind the Blogger
-subtitle: Developer, player and lover.
-description: Tech blog maintained by ewind / doodlewind
-author: ewind
+subtitle: 我想超越这平凡的生活，注定现在就是漂泊
+description: Tech blog maintained by Yifeng Wang (doodlewind)
+author: doodlewind
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ewind.us
+url: https://ewind.us
 root: /
 permalink: :year/:title/
 permalink_defaults:
@@ -57,7 +57,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 15
+per_page: 30
 pagination_dir: page
 
 # Extensions
