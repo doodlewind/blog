@@ -1,59 +1,44 @@
-date: 2018-01-22
+date: 2020-01-16
 
-title: 关于
+title: About Me
 ---
 
-`Object.keys(ewind)`
+I'm a Chinese programmer who loves sharing and pursuing potentials of the Web. I’m skilled in developing Web editors, WebGL libraries, and hybrid JavaScript infrastructures. Officially I work with JavaScript, but most common programming languages are still handy for me. I also dedicate myself to a variety of open source contributions, which includes releasing hacks, maintaining frameworks and posting tech blogs.
 
-* 前 Doodle Jump 爱好者 - doodlewind 昵称出处
-* 前 COC 泰坦玩家
-* 前宾得用户
-* 不熟练白魔法师
-* PSP / NDS / GUNPLA 入门爱好者
-* 排版格式强迫症
+## Social Network
+* [GitHub](http://github.com/doodlewind)
+* [知乎](https://www.zhihu.com/people/doodlewind)
+* [掘金](https://juejin.im/user/57d732a7816dfa00545434b2)
 
-
-## Skills
-* **精通：** <del>Hello World / Google 驱动编程 / Stack Overflow 驱动编程</del>
-* **熟练：** FED
-* **熟悉：** CS 基础
-* **了解：** Web Tech Stack
-
-
-## Side Projects
-
-### Libs
-* [Sinomap](http://sinomap.ewind.us) - 超轻 canvas 地图库
-* [vue-springbud](https://github.com/doodlewind/vue-springbud) - 100 行内的 Vue 生产环境模板
-* [vue-cmap](https://github.com/doodlewind/vue-cmap) - Vue 中国地图 Leaflet 组件
-
-### Tools
-* [FlyLog](https://github.com/doodlewind/flylog) -  前端远程调试工具
-* [imdoc](https://github.com/doodlewind/imdoc) - Markdown 文档生成器
-* [legs](https://github.com/doodlewind/legs) -  Gulp 前端自动化工作流
-* [easyLoop](https://github.com/doodlewind/easyLoop) - jQuery 轮播插件
-* [easyScale](https://github.com/doodlewind/easyScale) - jQuery 响应式布局插件
-
-### Sites
-* [ustc.life](http://ustc.life) - 科大学生导航主页
-* [南七书谱](http://bookface.ustc.edu.cn) - 科大二手书交易平台
-* [iCard](https://github.com/doodlewind/icard-ustc) - 科大一卡通消费信息抓取与分析
-* [USTC Ring](https://github.com/doodlewind/ustc-ring) - 科大本科毕业戒指交换平台
-* [ustc-gpa](/h5/gpa) - 科大 GPA 计算与换算
-* [Match Recorder](/h5/match-recorder) - 网球比赛计分器
-* [APPSeed](/h5/appseed/) - 科大 APPSeed 社团主页
-
-### Demos
-* [merry8](https://github.com/doodlewind/merry8) - Chip8 汇编解释器，支持运行 PONG 游戏
-* [ove-lang](http://ewind.us/h5/ove-lang/demo/) - 搞一个大新闻的 lisp 方言
-* [Typesetting](http://t.cn/RcQaMh4) - 数学公式排版语言编译器，基于 LALR 语法分析
-* [Gomoku Sifu](/h5/gomoku) - 简单五子棋 AI，基于 alpha / beta 剪枝
-* [MD Table Converter](/h5/md-table) - Markdown 表格美化 / 生成器，基于 LL 语法分析
+## Projects
+* [Beam](https://github.com/doodlewind/beam) - Expressive WebGL
+* [React SSD1306](https://github.com/doodlewind/react-ssd1306) - A React renderer for SSD1306 OLED chip
+* [MiyooSDK](https://github.com/doodlewind/MiyooSDK) - Docker environment for developing Miyoo Linux apps
+* [Freecube](https://github.com/doodlewind/freecube) - Solve Rubik's Cube with WebGL in 10KB
+* [StateShot](https://github.com/gaoding-inc/stateshot) - Non-aggressive history state management
+* [WebGL Seminar](https://github.com/doodlewind/webgl-seminar) - Traceable WebGL examples
+* [Rx Elevator Demo](https://github.com/doodlewind/rx-elevator-demo) - Elevator simulator with RxJS
+* [merry8](https://github.com/doodlewind/merry8) - Chip8 emulator for Web
+* [Sinomap](https://github.com/doodlewind/sinomap) - Lightweight canvas map library
+* [ove-lang](http://ewind.us/h5/ove-lang/demo/) - Funny Chinese lisp dialect
+* [vue-springbud](https://github.com/doodlewind/vue-springbud) - Lightweight Vue 2.0 scaffold
+* [vue-cmap](https://github.com/doodlewind/vue-cmap) - Vue wrapper for Leaflet maps
+* [FlyLog](https://github.com/doodlewind/flylog) - Front end remote debug tool
+* [imdoc](https://github.com/doodlewind/imdoc) - Markdown documentation generator
+* [legs](https://github.com/doodlewind/legs) - Simple gulp workflow
+* [easyLoop](https://github.com/doodlewind/easyLoop) - jQuery carousel plugin
+* [easyScale](https://github.com/doodlewind/easyScale) - jQuery responsive layout plugin
+* [ustc.life](http://ustc.life) - Navigation site for USTC students
+* [Bookface](http://bookface.ustc.edu.cn) - USTC second hand books exchange platform
+* [iCard](https://github.com/doodlewind/icard-ustc) - USTC personal consumption data analysis
+* [USTC Ring](https://github.com/doodlewind/ustc-ring) - USTC graduation ring exchange platform
+* [ustc-gpa](/h5/gpa) - USTC GPA calculation
+* [Match Recorder](/h5/match-recorder) - Tennis match scoring
+* [APPSeed](/h5/appseed/) - USTC APPSeed community homepage
+* [Typesetting](http://t.cn/RcQaMh4) - Simple math formula compiler based on LALR
+* [Gomoku Sifu](/h5/gomoku) - Simple Gomoku AI based on alpha-beta pruning
+* [MD Table Converter](/h5/md-table) - Recursive descent Markdown table parser
 
 
-## Contact
-* 参见本页 Footer
-
-
-## License
-* 本站点采用 [Creative Commons 署名-禁止演绎](http://creativecommons.org/licenses/by-nd/4.0) 授权
+## Site Content License
+[CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0)
