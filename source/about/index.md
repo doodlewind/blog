@@ -1,6 +1,6 @@
 date: 2020-01-16
 
-title: About Me
+title: About
 ---
 
 I'm a Chinese programmer who loves sharing and pursuing potentials of the Web. I’m skilled in developing Web editors, WebGL libraries, and hybrid JavaScript infrastructures. Officially I work with JavaScript, but most common programming languages are still handy for me. I also dedicate myself to a variety of open source contributions, which includes releasing hacks, maintaining frameworks and posting tech blogs.
