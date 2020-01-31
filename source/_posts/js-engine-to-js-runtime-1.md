@@ -334,4 +334,4 @@ void js_std_loop(JSContext *ctx)
 
 到现在为止这些对 QuickJS 的分析，是否能让大家发现，许多经常听到的高大上概念，实现起来其实也没有那么复杂呢？别忘了，QuickJS 出自传奇程序员 Fabrice Bellard。读他代码的感受，就像读高中习题的参考答案一样，既不漏过每个关键的知识点又毫不拖泥带水，非常有启发性。他本人也像金庸小说里创造「天下武学正宗」的中神通王重阳那样，十分令人叹服。带着问题阅读更高段位的代码，也几乎总能带来丰富的收获。
 
-好了，这就是上篇的全部内容了。在接下来的下篇中，我们将在熟悉了 QuickJS 和 Event Loop 的基础上，将 Event Loop 改由更可扩展的 libuv 来实现，届时全文涉及的代码示例也将一并给出。如果感兴趣，敬请关注我的这个「[前端随想录](https://zhuanlan.zhihu.com/fe-fantasy)」专栏噢～
+好了，这就是上篇的全部内容了。在接下来的下篇中，我们将在熟悉了 QuickJS 和 Event Loop 的基础上，将 Event Loop 改由更可扩展的 libuv 来实现，届时全文涉及的代码示例也将一并给出。如果感兴趣，敬请关注我的「[前端随想录](https://zhuanlan.zhihu.com/fe-fantasy)」专栏噢～
