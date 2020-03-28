@@ -9,6 +9,7 @@
     "new": "node ./snippets/new.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "hexo": "^3.2.2",
     "hexo-deployer-git": "^0.2.0",
     "hexo-generator-archive": "^0.1.4",
@@ -17,6 +18,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
   }
