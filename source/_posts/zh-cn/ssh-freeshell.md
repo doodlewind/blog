@@ -22,7 +22,7 @@ title: ssh 连接 Freeshell 小记
 
 解决方式是安装 OS X 的 X11。
 
-![X11](http://7u2gqx.com1.z0.glb.clouddn.com/ssh连接Freeshell小记0.png)
+![X11](/images/misc/ssh-freeshell.png)
 
 打开 X11，重新输入 ssh 命令，不过要加上 -X 参数（对 ipv4 连接，在 -p 前加上 -X）建立连接后
 

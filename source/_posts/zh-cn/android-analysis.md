@@ -20,7 +20,7 @@ title: 闲扯：影响安卓流畅性的原因？
 
 但硬件加速与安卓「窗口」的概念有关。比如以下这张截图，就包含四个窗口：
 
-![android](/images/闲扯：影响安卓流畅性的原因？0.png)
+![android](/images/misc/android-analysis.png)
 
 **状态栏窗口 / 壁纸窗口 / 壁纸上的启动器窗口 / 菜单窗口**
 

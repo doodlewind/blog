@@ -8,10 +8,10 @@ date: 2014-08-26
 
 toc: true
 
-title: UNIX 日常笔记
+title: UNIX Learning Note
 ---
 
-> This article is a UNIX beginner’s learning note.
+This is my note learning UNIX.
 
 <!--more-->
 

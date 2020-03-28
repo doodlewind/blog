@@ -16,31 +16,31 @@ title: 杭城速写
 
 <!--more-->
 
-![0](/images/杭城速写0.jpg)
+![0](/images/hangzhou/0.jpg)
 雷峰塔铃铛注视下的湖面，一抹抹涟漪是游船的痕迹
 
-![1](/images/杭城速写1.jpg)
+![1](/images/hangzhou/1.jpg)
 要不是柳条的新绿，真与海面有几分神似
 
-![2](/images/杭城速写2.jpg)
+![2](/images/hangzhou/2.jpg)
 在苏堤小桥上，欣赏落日时分美妙的光影渐变
 
-![3](/images/杭城速写3.jpg)
+![3](/images/hangzhou/3.jpg)
 同样的场景，把镜头拉近，远处亭台与山峰剪影交织成完美的弧线
 
-![4](/images/杭城速写4.jpg)
+![4](/images/hangzhou/4.jpg)
 转身回眸龙船后的雷峰塔，同样的金黄灿烂
 
-![5](/images/杭城速写5.jpg)
+![5](/images/hangzhou/5.jpg)
 苏堤草地上，遍布着形态挺拔的影子
 
-![6](/images/杭城速写6.jpg)
+![6](/images/hangzhou/6.jpg)
 奎元馆的片儿川号称杭城名菜，尝起来却是平凡小菜的开胃之感
 
-![7](/images/杭城速写7.jpg)
+![7](/images/hangzhou/7.jpg)
 商业街上多有风情独特的小店
 
-![8](/images/杭城速写8.jpg)
+![8](/images/hangzhou/8.jpg)
 古韵毕竟掩藏不住这座新城市的活力
 
 两天之间，所见有限。杭城之美，还待来日细品呢。

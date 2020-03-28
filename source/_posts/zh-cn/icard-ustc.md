@@ -14,7 +14,7 @@ toc: false
 title: 介绍 iCard-USTC
 ---
 
-![icard](/images/介绍iCard.USTC0.jpg)
+![icard](/images/ustc/icard.jpg)
 
 该怎么定义刚完成的 [iCard](http://icard.ustc.edu.cn) 呢？可以是消费信息可视化 / 一卡通记录分析 / 分布式数据采集 / 土豪指数计算……？蛤蛤，推荐大家尝试，挺有趣的。
 

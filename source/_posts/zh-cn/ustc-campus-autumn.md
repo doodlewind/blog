@@ -12,14 +12,16 @@ toc: false
 title: 初秋校园
 ---
 
-![campus](/images/初秋校园0.jpg)
+![campus](/images/ustc/campus-0.jpg)
 
-![campus](/images/初秋校园1.jpg)
+<!-- more -->
 
-![campus](/images/初秋校园2.jpg)
+![campus](/images/ustc/campus-1.jpg)
 
-![campus](/images/初秋校园3.jpg)
+![campus](/images/ustc/campus-2.jpg)
 
-![campus](/images/初秋校园4.jpg)
+![campus](/images/ustc/campus-3.jpg)
 
-![campus](/images/初秋校园5.jpg)
+![campus](/images/ustc/campus-4.jpg)
+
+![campus](/images/ustc/campus-5.jpg)
