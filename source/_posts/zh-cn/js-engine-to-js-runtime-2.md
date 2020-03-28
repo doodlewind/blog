@@ -12,9 +12,11 @@ toc: true
 title: 从 JS 引擎到 JS 运行时（下）
 ---
 
-![](https://ewind.us/images/js-engine-to-js-runtime/intro.png)
+<!-- ![](https://ewind.us/images/js-engine-to-js-runtime/intro.png) -->
 
 在[上篇文章](https://zhuanlan.zhihu.com/p/104333176)中，我们已经为 JS 引擎扩展出了个最简单的 Event Loop。但像这样直接基于各操作系统不尽相同的 API 自己实现运行时，无疑是件苦差。有没有什么更好的玩法呢？是时候让 libuv 粉墨登场啦。
+
+<!-- more -->
 
 我们知道，[libuv](https://libuv.org/) 是 Node.js 开发过程中衍生的异步 IO 库，能让 Event Loop 高性能地运行在不同平台上。可以说，今天的 Node.js 就相当于由 V8 和 libuv 拼接成的运行时。但 libuv 同样具备高度的通用性，已被用于实现 Lua、Julia 等其它语言的异步非阻塞运行时。接下来，我们将介绍如何用同样简单的代码，做到这两件事：
 

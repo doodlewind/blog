@@ -12,9 +12,11 @@ toc: true
 title: 从 JS 引擎到 JS 运行时（上）
 ---
 
-![](https://ewind.us/images/js-engine-to-js-runtime/intro.png)
+<!-- ![](https://ewind.us/images/js-engine-to-js-runtime/intro.png) -->
 
 V8 和 Node.js 的关系，是许多前端同学们所津津乐道的——浏览器里的语言，又兼容了浏览器外的环境，两份快乐重叠在一起。而这两份快乐，又带来了更多的快乐……但你有没有想过，这两份快乐到底是如何重叠在一起的呢？下面我们将以嵌入式 JS 引擎 QuickJS 为例，介绍一个 JS 引擎是如何被逐步定制为一个新的 JS 运行时的。
+
+<!-- more -->
 
 本文将分上下两篇，逐一覆盖（或者说，用尽可能简单的代码实现）这些内容：
 

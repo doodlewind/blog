@@ -13,7 +13,7 @@ toc: true
 title: StateShot - 无侵入的历史状态管理库
 ---
 
-![stateshot-logo](/images/stateshot/logo.png)
+<!-- ![stateshot-logo](/images/stateshot/logo.png) -->
 
 在前端的富交互编辑中，稳定的撤销 / 重做功能是用户安全感的一大保障。设计实现这样的特性时有哪些痛点，又该如何解决呢？[StateShot](https://github.com/gaoding-inc/stateshot) 凝聚了我们在这个场景下的一些思考。
 

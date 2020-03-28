@@ -11,7 +11,7 @@ toc: false
 title: 于是，我们给前端分享会定义了一个未定义的名字
 ---
 
-![undefined-title](/images/share-undefined-LRG_DSC02418.jpg)
+<!-- ![undefined-title](/images/share-undefined-LRG_DSC02418.jpg) -->
 
 经过我司前端小伙伴们的投票，我们即将对外开放的前端分享会终于正式定名为 **Undefined 分享会**啦（撒花~）而这篇文章就是关于分享会本身的一个小分享 XD
 

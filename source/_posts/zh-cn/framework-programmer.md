@@ -11,7 +11,7 @@ toc: false
 title: 器材摄影师与框架程序员
 ---
 
-![title](/images/title-instax.jpg)
+<!-- ![title](/images/title-instax.jpg) -->
 
 摄影圈子里的「器材党」通常泛指热衷于讨论器材的爱好者群体。无独有偶，技术社区里也有一类以掌握某个开发框架为骄傲的程序员。你还别说，这两个群体还真的挺像的……
 

@@ -12,9 +12,11 @@ toc: false
 title: 一个白学家眼里的 WebAssembly
 ---
 
-![](https://ewind.us/images/wasm-wa2/wa2-js-wa.jpg)
+<!-- ![](https://ewind.us/images/wasm-wa2/wa2-js-wa.jpg) -->
 
 在知乎「[如何看待 WebAssembly 技术](https://www.zhihu.com/question/362649730)」的问题里，可以看出大家普遍对浏览器、WASM 和 JS 之间的三角关系有不少误解。因此这里作为一个开 (bai) 发 (xue) 者 (jia)，我就来尝试纠正些常见的问题吧。
+
+<!-- more -->
 
 > 全文观点摘要：**WASM 运行时性能在原理上就是受限的，甚至 JS 都可以和编译到 WASM 的 Rust 一较高下。加上工具链的高度侵入性，它并不太适合作为前端背景同学 all in 的方向，但对于原生应用的跨平台分发则非常有潜力**。
 
