@@ -11,7 +11,9 @@ toc: true
 title: COC 自动化小脚本
 ---
 
-[Clash of Clans 自动化 Farm 脚本](https://github.com/doodlewind/sikuli-coc)，基于 [Sikuli](http://sikulix-2014.readthedocs.org/en/latest/)
+这是一个 Clash of Clans 自动化 Farm 脚本，基于 [Sikuli](http://sikulix-2014.readthedocs.org/en/latest/)。
+
+[Repo 地址](https://github.com/doodlewind/sikuli-coc)
 
 <!--more-->
 
