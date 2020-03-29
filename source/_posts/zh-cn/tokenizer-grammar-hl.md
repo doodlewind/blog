@@ -13,11 +13,11 @@ toc: false
 title: Tokenizer 与语法高亮
 ---
 
-![Demo](http://7u2gqx.com1.z0.glb.clouddn.com/Tokenizer与语法高亮1)
-
 为了对付可能的约架，学学写 Tokenizer 还是有其必要性的。这个 [Demo](http://ewind.us/h5/sql-hl/index.html) 就是个小示例。
 
 <!--more-->
+
+![Demo](/images/misc/tokenizer-hl.png)
 
 顾名思义，Tokenizer 就是把输入的字符流转化为一个个 Token 的工具。这个过程就是所谓的 Lexial Analysis，也就是词法分析。完成词法分析后，文本被分离为一些独立的 Token，便于在接下来的语法分析过程中建立语法树。另外，Tokenizer 还可以丢掉源代码中的注释和空白，只是实现语法高亮时没必要这么做就是了。
 

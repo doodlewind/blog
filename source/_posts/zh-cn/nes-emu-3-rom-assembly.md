@@ -8,7 +8,7 @@ date: 2015-07-05
 
 toc: true
 
-title: NES模拟器笔记（3）ROM 与汇编
+title: NES模拟器笔记 (3) ROM 与汇编
 ---
 
 这篇文章会介绍 NES ROM 的结构，再通过第一篇入门指南中配置好的汇编器，编译并分析一个最简单的 nes 文件，从而对汇编和机器码有一个最基本的认识。
@@ -36,7 +36,7 @@ Header 每个字节的定义如下：
 
 现在我们再看第一篇教程中超级马里奥游戏 ROM 的截图：
 
-![mario-1](/images/NES模拟器入门笔记/mario-1.jpg)
+![mario-1](/images/nes/mario-1.jpg)
 
 第一行的 16 字节就是 iNES Header 了。后面以 78 开始跟着的就是 CHR ROM 的内容，即 6502 的机器码。
 
@@ -57,11 +57,11 @@ forever:
 
 我们会得到一个 8KB 大小的 ROM，下面就用查看器打开它。
 
-![lda-demo](/images/NES模拟器入门笔记/lda-demo.jpg)
+![lda-demo](/images/nes/lda-demo.jpg)
 
 去掉第一行 Header，能看到的就是 `A0 01 8D 15 40 4C 05 E0` 这几条指令了。怎么找到指令和汇编码的对应关系呢？
 
-![6502-opcodes](/images/NES模拟器入门笔记/6502-opcodes.png)
+![6502-opcodes](/images/nes/6502-opcodes.png)
 
 ``` asm
 imm = #$00

@@ -10,16 +10,16 @@ date: 2015-03-16
 
 toc: true
 
-title: 自制五子棋（3）包装发布
+title: 自制五子棋 (3) 包装发布
 ---
 
 做了些交互的改进后，来试试这个 [Sifu 五子棋](http://ewind.us/h5/gomoku) 吧~
 
-![Sifu](/images/自制五子棋（3）包装发布1.jpg)
+<!--more-->
+
+![Sifu](/images/gomoku/3.jpg)
 
 下面就简要地描述一下发布前的几项改进吧。完整的代码可以看[这里](https://github.com/doodlewind/gomoku)。
-
-<!--more-->
 
 ## 多线程 Web Worker
 虽然 Sifu 已经实现了不少优化，但它的试作性质决定了它的速度不会有多快……而 JS 默认的单线程一跑起来就会阻塞，解决方案就是通过 Worker 实现多线程。

@@ -13,7 +13,7 @@ toc: true
 title: JS 数学公式排版编译器
 ---
 
-![output-ewind](http://7u2gqx.com1.z0.glb.clouddn.com/在网页上实现公式排版/output-ewind.png)
+![output-ewind](/images/typesetting/output-ewind.png)
 
 这个 [**Demo**](http://ewind.us/h5/compile-exp/) 可以支持含上下标、括号、空格与嵌套定义的基本公式排版，它的背后则是一套自造的小轮子，包含基于原生 JS 构建的词法分析器、表驱动自底向上语法分析器和语义分析方案。这个千行级小项目的完整 [**Repo**](https://github.com/doodlewind/compilExpt) 即是对编译原理知识的小实践。
 
@@ -86,7 +86,7 @@ title: JS 数学公式排版编译器
 ### 算法及正则表达式
 词法分析器核心代码描述如下，完整实现见 `lexer.js`
 
-```
+``` js
 var LEXER = function(text) {
     var lexOut = [];
     var matched;
@@ -124,7 +124,7 @@ var LEXER = function(text) {
 ### 错误控制
 出现错误时，`lexer.js` 将抛出异常，主脚本将接受异常并显示产生异常的字符。下图中的样例输入包含了汉字，可以发现词法分析器定位了该字符。
 
-![lexer-error](http://7u2gqx.com1.z0.glb.clouddn.com/在网页上实现公式排版/lexer-error.png)
+![lexer-error](/images/typesetting/lexer-error.png)
 
 
 ## 语法分析
@@ -230,7 +230,7 @@ T -> R _ ^ { B } { B } ●
 ### 错误定位
 语法分析器能在移入-归约分析过程中进行错误定位，若在 ACTION 表中查到了未定义动作的条目，将显示相应的字符。
 
-![parser-error](http://7u2gqx.com1.z0.glb.clouddn.com/在网页上实现公式排版/parser-error.png)
+![parser-error](/images/typesetting/parser-error.png)
 
 
 ## 语义动作
@@ -246,7 +246,7 @@ T -> R _ ^ { B } { B } ●
 
 添加分析树的显式构造模块后，`grammar.js` 中对应的产生式条目结构如下所示：
 
-```
+``` js
 [
     {
         'from': S['T'],
@@ -270,7 +270,7 @@ T -> R _ ^ { B } { B } ●
 ### 属性的计算
 计算属性时，从根节点开始遍历语法树，中途依据每个节点所对应的产生式，调整其给子节点继承的属性值。对每条产生式，相应的调整函数同样位于 `grammar.js` 中，通过对每条产生式条目添加 `calc` 键而得到。以上标表达式的计算为例。
 
-``` 
+``` js
     {
         'from': S['T'], 'to': [S['R'], S['^'], S['{'], S['B'], S['}']],
         'action': function () { 
@@ -292,7 +292,7 @@ T -> R _ ^ { B } { B } ●
 
 通过递归向下地调用 `traversal` 函数，完成对树的遍历。在叶节点，即可输出相应的目标代码。
 
-``` 
+``` js
 // execute semantic action
 function traversal(node, x, y, size) {
     return GRAMMAR[node.index]['calc'](node, x, y, size);
@@ -304,7 +304,7 @@ function traversal(node, x, y, size) {
 ## Web 界面与绘图
 程序各模块在 `index.html` 中的 `<head>` 部分依次加载，其结构包含：
 
-```
+``` html
     <script src="libs/typesetting/lexer.js"></script>
     <script src="libs/typesetting/grammar.js"></script>
     <script src="libs/table-builder.js"></script>

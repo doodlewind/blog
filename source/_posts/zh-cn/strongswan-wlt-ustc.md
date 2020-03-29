@@ -26,7 +26,7 @@ title: 用 strongSwan 实现网络通一号多用
 ### 网络设置
 需要将虚拟机网卡设置为桥接模式，如下图所示。
 
-![network-config](http://7u2gqx.com1.z0.glb.clouddn.com/用strongSwan实现网络通一号多用/virtualbox-network.png)
+![network-config](/images/strongswan/virtualbox-network.png)
 
 ### 图形界面
 在 Virtualbox 的主界面中选中要运行的虚拟机，点击菜单栏上的 `运行` 按钮即可。
@@ -332,7 +332,7 @@ ipsec start --nofork
 
 完成后，选择 `通用 -> VPN -> 连接` 即可一键连接到搭建好的 IPSec VPN 了！
 
-![cliend-iOS8](http://7u2gqx.com1.z0.glb.clouddn.com/用strongSwan实现网络通一号多用/vpn-client-ios8.PNG)
+![cliend-iOS8](/images/strongswan/vpn-client-ios8.png)
 
 
 ## 抓包分析
@@ -347,7 +347,7 @@ ipsec start --nofork
 
 由于 iPhone 5C 默认的 IPSec 客户端设置为 PSK 预共享密钥形式，故在密钥协商时采用了 IKEv1 协议（配置文件中支持 IKEv2，但在连接建立时回退到了 IKEv1）。
 
-![isakmp-login](http://7u2gqx.com1.z0.glb.clouddn.com/用strongSwan实现网络通一号多用/isakmp-login.jpg)
+![isakmp-login](/images/strongswan/isakmp-login.jpg)
 
 通过以上高亮的 6 条报文，建立了连接。其过程如下：
 
@@ -359,7 +359,7 @@ ipsec start --nofork
 
 两种情况下，响应方都会在自己配置的 IKE 安全提议中寻找与发送方相匹配的 IKE 安全提议，如果没有匹配的安全提议则协商失败。IKE Peer 双方安全提议匹配的原则为协商双方有相同的加密算法、认证算法、身份认证方法和 DH 组标识（不包括 IKE SA 生存周期）。
 
-![isakmp-init](http://7u2gqx.com1.z0.glb.clouddn.com/用strongSwan实现网络通一号多用/isakmp-init.jpg)
+![isakmp-init](/images/strongswan/isakmp-init.jpg)
 
 此即由 iPhone 发起的第一条报文，其载荷长度也是所有报文中最长的。通过 strongSwan 的日志，可以发现这也与日志内容相匹配。这里 iPhone 发起的连接采用了 Main Mode 主模式，而非 Aggressive Mode 积极模式。
 
@@ -430,7 +430,7 @@ ipsec start --nofork
 ### 数据传输
 在完成上文的 ISAKMP 协商过程后，通信双方即开始发送 IPSec（ESP）报文。
 
-![esp](http://7u2gqx.com1.z0.glb.clouddn.com/用strongSwan实现网络通一号多用/esp.jpg)
+![esp](/images/strongswan/esp.jpg)
 
 在上图中筛选出了由 iPhone 客户端到 VPN 主机之间的报文。其中的明文信息有 ESP 格式载荷的 SPI 号和序列号，而其载荷内容经过加密而无法查看。
 
